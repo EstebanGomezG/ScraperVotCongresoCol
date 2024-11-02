@@ -1,5 +1,5 @@
-🗳️ Votaciones Senadores Scraper 🐍
-Este proyecto automatiza la extracción de datos de votaciones de senadores desde la página web de acceso público, Congreso a la Mano del diario El Espectador, utilizando Selenium WebDriver en Python. Los datos extraídos incluyen el nombre de cada senador y su voto (Sí, No, Ausente), que luego se almacenan en un archivo CSV para su posterior análisis.
+🗳️ Votaciones Congreso Col Scraper 🐍
+Este proyecto automatiza la extracción de datos de votaciones de congresistas desde la página web de acceso público, Congreso a la Mano del diario El Espectador, utilizando Selenium WebDriver en Python. Los datos extraídos incluyen el nombre de cada senador y su voto (Sí, No, Ausente), que luego se almacenan en un archivo CSV para su posterior análisis.
 
 📚 Tabla de Contenidos
 🔍 Características
@@ -83,7 +83,6 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 📈 Capturas de Pantalla (Opcional)
 
 🤝 Contribuciones
-Las contribuciones son bienvenidas. Por favor, lee CONTRIBUTING.md para más detalles sobre cómo contribuir al proyecto.
-
+Las contribuciones son bienvenidas. 
 📫 Contacto
-Si tienes preguntas o necesitas más información, puedes contactarme a través de tu-email@ejemplo.com.
+Si tienes preguntas o necesitas más información, puedes contactarme a través de estebangg.data@gmail.com.
