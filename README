@@ -1,0 +1,89 @@
+🗳️ Votaciones Senadores Scraper 🐍
+Este proyecto automatiza la extracción de datos de votaciones de senadores desde la página web de acceso público, Congreso a la Mano del diario El Espectador, utilizando Selenium WebDriver en Python. Los datos extraídos incluyen el nombre de cada senador y su voto (Sí, No, Ausente), que luego se almacenan en un archivo CSV para su posterior análisis.
+
+📚 Tabla de Contenidos
+🔍 Características
+🛠️ Prerequisitos
+🚀 Instalación
+💡 Uso
+📄 Salida
+📝 Notas
+📄 Licencia
+🔍 Características
+Automatización Web: Utiliza Selenium para interactuar con la página web y extraer datos dinámicamente.
+Extracción Específica: Obtiene el nombre de los senadores y su voto correspondiente.
+Almacenamiento de Datos: Guarda los datos extraídos en un archivo CSV para facilitar el análisis.
+Gestión Automática del WebDriver: Usa webdriver-manager para manejar la instalación y actualización del ChromeDriver automáticamente.
+🛠️ Prerequisitos
+Antes de comenzar, asegúrate de tener instalados los siguientes requisitos:
+
+Python 3.6 o superior 🐍
+Google Chrome instalado en tu sistema 📥
+🚀 Instalación
+Clona el Repositorio 📂
+
+bash
+Copiar código
+git clone https://github.com/tu-usuario/votaciones-senadores-scraper.git
+cd votaciones-senadores-scraper
+Crea un Entorno Virtual (Opcional pero Recomendado) 🔒
+
+bash
+Copiar código
+python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+Instala las Dependencias 📦
+
+bash
+Copiar código
+pip install -r requirements.txt
+Si no tienes un archivo requirements.txt, puedes instalar las dependencias directamente:
+
+bash
+Copiar código
+pip install selenium webdriver-manager pandas
+💡 Uso
+Ejecuta el Script 🏃‍♂️
+
+Asegúrate de estar en el directorio del proyecto y de que el entorno virtual esté activado (si lo usaste).
+
+bash
+Copiar código
+python scraper.py
+Donde scraper.py es el archivo que contiene el código proporcionado.
+
+Proceso del Script 🛠️
+
+Inicializa el WebDriver de Chrome.
+Navega a la página web específica de votaciones.
+Espera a que el contenedor con id="Votacion2" esté presente.
+Extrae los nombres de los senadores y sus votos.
+Normaliza los votos a categorías estándar (Sí, No, Ausente).
+Almacena los datos en un DataFrame de pandas.
+Exporta los datos a un archivo CSV llamado votaciones_senadores.csv.
+Cierra el navegador.
+📄 Salida
+Después de ejecutar el script, encontrarás un archivo CSV en el directorio del proyecto llamado votaciones_senadores.csv con la siguiente estructura:
+
+Nombre	Voto
+Aida Marina Quilcué Vivas	Sí
+María José Pizarro Rodríguez	Sí
+Martha Isabel Peralta Epieyú	Sí
+Julio César Estrada Cordero	Sí
+...	...
+📝 Notas
+Actualización de ChromeDriver 🔄: El script utiliza webdriver-manager para manejar automáticamente la versión correcta de ChromeDriver. Asegúrate de mantener actualizada la extensión de Chrome en tu navegador.
+Manejo de Errores ⚠️: El script incluye manejo básico de excepciones para capturar y reportar errores durante la extracción de datos.
+Modificación de URL 🔗: Si deseas extraer datos de otra página similar, asegúrate de actualizar la URL en el script (driver.get("https://congresoalamano.elespectador.com/proyecto-perfil/220004/")). Así mismo, no olvides cambiar el nombre del contenedor para obtener los datos de la votación de tu interés.
+📄 Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+¡Gracias por usar el Votaciones Senadores Scraper! 🎉 Si encuentras algún problema o tienes sugerencias, no dudes en abrir una issue en el repositorio.
+
+📈 Capturas de Pantalla (Opcional)
+
+🤝 Contribuciones
+Las contribuciones son bienvenidas. Por favor, lee CONTRIBUTING.md para más detalles sobre cómo contribuir al proyecto.
+
+📫 Contacto
+Si tienes preguntas o necesitas más información, puedes contactarme a través de tu-email@ejemplo.com.
