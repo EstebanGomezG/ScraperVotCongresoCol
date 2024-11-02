@@ -12,11 +12,11 @@ def main():
     option = webdriver.ChromeOptions()
     option.add_argument("--window-size=1080,720")
     driver = webdriver.Chrome(service=service, options=option)
-    driver.get("https://congresoalamano.elespectador.com/proyecto-perfil/220004/")
+    driver.get("https://congresoalamano.elespectador.com/proyecto-perfil/230007/")
    
     try:
         wait = WebDriverWait(driver, 10)
-        contenedor = wait.until(EC.presence_of_element_located((By.ID, 'Votacion2')))
+        contenedor = wait.until(EC.presence_of_element_located((By.ID, 'Votacion4')))
         
     
     except TimeoutError:
